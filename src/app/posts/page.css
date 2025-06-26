@@ -1,0 +1,21 @@
+.EnormousPageTitle {
+  font-size: 244px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 16px; /* Paragraph spacing */
+  position: relative;
+  text-align: center; /* Optional, depending on your design */
+}
+
+.EnormousPageTitle::before,
+.EnormousPageTitle::after {
+  content: "";
+  display: block;
+  height: 1px; /* Thin line */
+  background-color: lightgray; /* Or use the exact gray from your Figma if you want */
+  margin: 16px 0; /* Optional spacing between title and line */
+}
+.PageContainer {
+  max-width: 1216px;
+  margin: 0 auto;
+}
