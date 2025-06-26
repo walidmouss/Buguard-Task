@@ -1,0 +1,29 @@
+.BlogCard {
+  width: 384px;
+  height: 444px;
+}
+
+.BlogImage {
+  width: 384px;
+  height: 240px;
+}
+
+.BlogContent {
+  height: 204px; /* 444 - 240 */
+}
+
+.BlogDate {
+  color: purple;
+}
+
+.BlogHeader {
+}
+
+.BlogBody {
+}
+
+.BlogTags {
+}
+
+.BlogTag {
+}
