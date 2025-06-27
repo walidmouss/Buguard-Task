@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className="Navbar">
-      <div className="NavbarName">Walid Moussa</div>
+      <div className="NavbarName">Walid Moussa Khalil Ibrahim</div>
       <button className="NavbarToggle" onClick={toggleDarkMode}>
         {darkMode ? "Light Mode" : "Dark Mode"}
       </button>

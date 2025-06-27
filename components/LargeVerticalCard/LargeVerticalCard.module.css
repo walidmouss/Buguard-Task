@@ -1,0 +1,42 @@
+.BlogCard {
+  width: 592px;
+  height: 452px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.BlogImage {
+  width: 592px;
+  height: 228px;
+  object-fit: cover;
+}
+
+.BlogContent {
+  padding: 16px;
+}
+
+.BlogDate {
+  color: purple;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.BlogHeader {
+  margin-bottom: 8px;
+}
+
+.BlogBody {
+  color: #666666; /* Light gray as you requested */
+  margin-bottom: 12px;
+}
+
+.BlogTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.BlogTag {
+  /* You can style individual tags later if needed */
+}
