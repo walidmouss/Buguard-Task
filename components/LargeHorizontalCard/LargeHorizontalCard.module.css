@@ -1,0 +1,53 @@
+.BlogCard {
+  display: flex;
+  width: 1216px;
+  height: 246px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.BlogImage {
+  width: 590px;
+  height: 246px;
+  object-fit: cover;
+  margin-right: 24px; /* ✅ 24px gap between image and text */
+}
+
+.BlogContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.BlogDate {
+  color: purple;
+  font-weight: 500;
+  margin-bottom: 6px; /* ✅ Reduced spacing between date and title */
+}
+
+.BlogHeader {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px; /* ✅ Reduced spacing between title and body */
+  color: #222;
+}
+
+.BlogBody {
+  color: #666; /* ✅ Light gray for subtext */
+  font-size: 0.95rem;
+  margin-bottom: 24px; /* ✅ Same as before: body to tags */
+}
+
+.BlogTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.BlogTag {
+  background-color: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #555;
+}

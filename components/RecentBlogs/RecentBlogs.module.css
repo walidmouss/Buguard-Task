@@ -1,0 +1,25 @@
+.RecentBlogsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.TopSection {
+  display: flex;
+  gap: 32px;
+}
+
+.LeftColumn {
+  flex: 1;
+}
+
+.RightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.BottomSection {
+  /* Full width by default inside wrapper */
+}

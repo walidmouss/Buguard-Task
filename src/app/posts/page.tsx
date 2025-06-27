@@ -8,6 +8,7 @@ export default function Posts() {
     <div className="PageContainer">
       <Navbar />
       <h1 className="EnormousPageTitle">THE BLOG</h1>
+      <h2>Recent blog posts</h2>
       <RecentBlogs />
       <AllPosts />
       <Footer />
