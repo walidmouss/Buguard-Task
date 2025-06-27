@@ -1,10 +1,10 @@
 .EnormousPageTitle {
   font-size: 244px;
   font-weight: 700;
-  line-height: 100%;
-  margin-bottom: 16px; /* Paragraph spacing */
+  margin: 64px 0 48px 0;
+  line-height: 1;
   position: relative;
-  text-align: center; /* Optional, depending on your design */
+  text-align: center;
 }
 
 .EnormousPageTitle::before,
@@ -12,10 +12,31 @@
   content: "";
   display: block;
   height: 1px; /* Thin line */
-  background-color: lightgray; /* Or use the exact gray from your Figma if you want */
-  margin: 16px 0; /* Optional spacing between title and line */
+  background-color: lightgray;
+  margin: 16px 0;
 }
 .PageContainer {
   max-width: 1216px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
   margin: 0 auto;
+}
+
+@media (max-width: 1366px) {
+  .EnormousPageTitle {
+    font-size: 160.8px;
+  }
+  .PageContainer {
+    max-width: 770px;
+  }
+}
+
+@media (max-width: 550px) {
+  .EnormousPageTitle {
+    font-size: 72px;
+  }
+  .PageContainer {
+    max-width: 326px;
+  }
 }

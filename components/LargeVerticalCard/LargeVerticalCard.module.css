@@ -27,7 +27,7 @@
 }
 
 .BlogBody {
-  color: #666666; /* Light gray as you requested */
+  color: #666666;
   margin-bottom: 12px;
 }
 
@@ -38,5 +38,28 @@
 }
 
 .BlogTag {
-  /* You can style individual tags later if needed */
+  /* place holder for tags */
+}
+@media (max-width: 1366px) {
+  .BlogCard {
+    width: 770px;
+    height: 400px;
+  }
+  .BlogImage {
+    width: 770px;
+    height: 228px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 550px) {
+  .BlogCard {
+    width: 326px;
+    height: 448px;
+  }
+  .BlogImage {
+    width: 326px;
+    height: 228px;
+    object-fit: cover;
+  }
 }

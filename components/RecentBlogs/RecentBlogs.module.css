@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
+  max-width: 1216px;
+  margin-left: auto; /* Forces centering */
+  margin-right: auto; /*  Forces centering */
 }
 
 .TopSection {
@@ -21,5 +25,28 @@
 }
 
 .BottomSection {
-  /* Full width by default inside wrapper */
+}
+
+@media (max-width: 1366px) {
+  .RecentBlogsWrapper {
+    max-width: 770px; /*Tablet width */
+    padding: 0;
+  }
+
+  .TopSection {
+    flex-direction: column;
+  }
+
+  .LeftColumn,
+  .RightColumn {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .RecentBlogsWrapper {
+    max-width: 326px;
+    padding: 0;
+  }
 }

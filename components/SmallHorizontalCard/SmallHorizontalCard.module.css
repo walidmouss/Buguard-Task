@@ -50,3 +50,27 @@
   font-size: 0.8rem;
   color: #555;
 }
+
+@media (max-width: 1366px) {
+  .BlogCard {
+    width: 770px;
+    height: 200px;
+  }
+
+  .BlogImage {
+    width: 320px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .BlogCard {
+    width: 326px;
+    height: 412px;
+  }
+
+  .BlogImage {
+    width: 320px;
+    height: 200px;
+  }
+}

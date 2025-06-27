@@ -1,6 +1,6 @@
 .PostsGrid {
   display: grid;
   grid-template-columns: repeat(3, 384px);
-  gap: 32px; /* Or 24px / 16px / whatever you like */
+  gap: 32px;
   justify-content: center; /* Keeps the whole grid centered horizontally */
 }
