@@ -4,3 +4,15 @@
   gap: 32px;
   justify-content: center; /* Keeps the whole grid centered horizontally */
 }
+@media (max-width: 1366px) {
+  .PostsGrid {
+    grid-template-columns: repeat(2, 384px);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .PostsGrid {
+    grid-template-columns: repeat(1, 384px);
+  }
+}
