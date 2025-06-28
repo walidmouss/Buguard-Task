@@ -1,5 +1,7 @@
 import BlogCard from "../BlogCard/BlogCard";
 import "./AllPosts.css";
+import Link from "next/link";
+
 type Post = {
   userId: number;
   id: number;
@@ -19,7 +21,13 @@ export default async function AllPosts() {
       <h2>All blog posts</h2>
       <div className="PostsGrid">
         {postsData.map((post) => (
-          <BlogCard key={post.id} post={post} />
+          <Link
+            key={post.id}
+            href={`/posts/${post.id}`}
+            className="NoLinkStyle"
+          >
+            <BlogCard post={post} />
+          </Link>
         ))}
       </div>
     </div>

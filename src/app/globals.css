@@ -3,3 +3,8 @@
 body {
   font-family: "Inter", sans-serif;
 }
+.NoLinkStyle {
+  all: unset; /* This kills default link styles (blue, underline, etc) */
+  display: block; /* So your div layout stays correct */
+  cursor: pointer; /* Optional: makes it clickable cursor */
+}

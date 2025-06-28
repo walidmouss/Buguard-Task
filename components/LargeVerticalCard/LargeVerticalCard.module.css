@@ -48,7 +48,6 @@
   .BlogImage {
     width: 770px;
     height: 228px;
-    object-fit: cover;
   }
 }
 
@@ -60,6 +59,5 @@
   .BlogImage {
     width: 326px;
     height: 228px;
-    object-fit: cover;
   }
 }

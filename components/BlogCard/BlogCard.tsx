@@ -1,5 +1,4 @@
 import "./BlogCard.css";
-
 export default function BlogCard({
   post,
 }: {
