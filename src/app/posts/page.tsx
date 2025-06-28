@@ -1,5 +1,4 @@
 import AllPosts from "../../../components/AllPosts/AllPosts";
-import Footer from "../../../components/Footer/Footer";
 import Navbar from "../../../components/Navbar/Navbar";
 import RecentBlogs from "../../../components/RecentBlogs/RecentBlogs";
 import "./page.css";
@@ -11,7 +10,6 @@ export default function Posts() {
       <h2>Recent blog posts</h2>
       <RecentBlogs />
       <AllPosts />
-      <Footer />
     </div>
   );
 }

@@ -4,6 +4,43 @@
   gap: 32px;
   justify-content: center; /* Keeps the whole grid centered horizontally */
 }
+.PaginationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  font-family: Inter, sans-serif;
+  color: #667085;
+}
+
+.PaginationNav {
+  cursor: pointer;
+  color: #667085;
+}
+
+.PaginationPages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.PageNumber {
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.ActivePageNumber {
+  background-color: #f9f5ff;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.Dots {
+  margin: 0 4px;
+  padding-left: 15px;
+}
+
 @media (max-width: 1366px) {
   .PostsGrid {
     grid-template-columns: repeat(2, 384px);
@@ -15,4 +52,12 @@
   .PostsGrid {
     grid-template-columns: repeat(1, 384px);
   }
+}
+
+body.dark .PaginationBar,
+body.dark .PaginationNav {
+  color: white;
+}
+body.dark .ActivePageNumber {
+  color: black;
 }
