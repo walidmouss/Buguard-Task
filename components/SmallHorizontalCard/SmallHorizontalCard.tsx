@@ -6,7 +6,7 @@ export default function SmallHorizontalCard({ postData }: { postData: Post }) {
   const date = "June 26, 2025"; // Placeholder date
 
   return (
-    <div className={styles.BlogCard}>
+    <div className={`SmallHorizontalCard ${styles.BlogCard}`}>
       <img
         src={`https://picsum.photos/592/228?random=${postData.id}`}
         alt="Blog Image"

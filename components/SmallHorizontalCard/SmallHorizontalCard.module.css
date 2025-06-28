@@ -20,21 +20,22 @@
 }
 
 .BlogDate {
-  color: purple;
-  font-weight: 500;
+  color: #6941c6;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .BlogHeader {
   font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 4px; /* ✅ Reduced from 8px to 4px (tighter spacing to subtext) */
+  margin-bottom: 4px;
   color: #222;
 }
 
 .BlogBody {
-  color: #666; /* Light gray for subtext */
+  color: #667085;
   font-size: 0.95rem;
-  margin-bottom: 24px; /* Keeping this as-is for now */
+  margin-bottom: 24px;
 }
 
 .BlogTags {
@@ -73,4 +74,16 @@
     width: 320px;
     height: 200px;
   }
+}
+
+:global(body.dark) .BlogHeader {
+  color: #ffffff;
+}
+
+:global(body.dark) .BlogBody {
+  color: #c0c5d0;
+}
+
+:global(body.dark) .BlogDate {
+  color: #6941c6;
 }

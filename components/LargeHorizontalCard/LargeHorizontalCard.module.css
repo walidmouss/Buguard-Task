@@ -20,8 +20,9 @@
 }
 
 .BlogDate {
-  color: purple;
-  font-weight: 500;
+  color: #6941c6;
+  font-size: 14px;
+  font-weight: 600;
   margin-bottom: 6px;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .BlogBody {
-  color: #666;
+  color: #667085;
   font-size: 0.95rem;
   margin-bottom: 24px;
 }
@@ -69,4 +70,29 @@
 }
 
 @media (max-width: 550px) {
+  .BlogCard {
+    width: 326px;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .BlogImage {
+    width: 326px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+:global(body.dark) .BlogHeader {
+  color: #ffffff;
+}
+
+:global(body.dark) .BlogBody {
+  color: #c0c5d0;
+}
+
+:global(body.dark) .BlogDate {
+  color: #6941c6;
 }

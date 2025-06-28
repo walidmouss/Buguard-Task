@@ -8,6 +8,7 @@ export default function Navbar() {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+    document.body.classList.toggle("dark", !darkMode);
   };
 
   return (

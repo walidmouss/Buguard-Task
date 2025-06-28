@@ -13,17 +13,36 @@
 }
 
 .BlogDate {
-  color: purple;
+  color: #6941c6;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .BlogHeader {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .BlogBody {
+  color: #667085;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .BlogTags {
 }
 
 .BlogTag {
+}
+
+body.dark .BlogHeader {
+  color: #ffffff;
+}
+
+body.dark .BlogBody {
+  color: #c0c5d0;
+}
+
+body.dark .BlogDate {
+  color: #6941c6;
 }

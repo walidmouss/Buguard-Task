@@ -2,9 +2,40 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: white;
+  color: black;
 }
 .NoLinkStyle {
-  all: unset; /* This kills default link styles (blue, underline, etc) */
-  display: block; /* So your div layout stays correct */
-  cursor: pointer; /* Optional: makes it clickable cursor */
+  all: unset; /* This kills default link styles */
+  display: block;
+  cursor: pointer;
+}
+.Navbar {
+  background-color: white;
+  color: #090d1f;
+}
+.BlogCard {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #090d1f;
+  color: white;
+}
+body.dark .Navbar {
+  background-color: #090d1f;
+  color: white;
+}
+body.dark .BlogCard {
+  background-color: #090d1f;
+  color: white;
+}
+
+body.dark .LargeHorizontalCard,
+body.dark .SmallHorizontalCard,
+body.dark .SmallVerticalCard,
+body.dark .LargeVerticalCard {
+  background-color: #090d1f;
+  color: white;
 }

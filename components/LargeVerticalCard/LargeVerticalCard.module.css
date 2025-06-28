@@ -17,8 +17,9 @@
 }
 
 .BlogDate {
-  color: purple;
-  font-weight: bold;
+  color: #6941c6;
+  font-size: 14px;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .BlogBody {
-  color: #666666;
+  color: #667085;
   margin-bottom: 12px;
 }
 
@@ -60,4 +61,16 @@
     width: 326px;
     height: 228px;
   }
+}
+
+:global(body.dark) .BlogHeader {
+  color: #ffffff;
+}
+
+:global(body.dark) .BlogBody {
+  color: #c0c5d0;
+}
+
+:global(body.dark) .BlogDate {
+  color: #6941c6;
 }
