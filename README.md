@@ -35,7 +35,7 @@ Clone the repo
 bash
 Copy
 Edit
-git clone https://github.com/your-username/buguard-task.git
+git clone https://github.com/walidmouss/buguard-task.git
 cd buguard-task
 Install dependencies
 
