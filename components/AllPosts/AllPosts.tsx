@@ -5,7 +5,7 @@ import BlogCard from "../BlogCard/BlogCard";
 import "./AllPosts.css";
 import Link from "next/link";
 
-type Post = {
+export type Post = {
   userId: number;
   id: number;
   title: string;

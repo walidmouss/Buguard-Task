@@ -1,4 +1,4 @@
-import { Post } from "../RecentBlogs/RecentBlogs";
+import type { Post } from "../AllPosts/AllPosts";
 import styles from "./LargeHorizontalCard.module.css";
 
 export default function LargeHorizontalCard({ postData }: { postData: Post }) {

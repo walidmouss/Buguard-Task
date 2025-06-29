@@ -1,12 +1,12 @@
-import { Post } from "../../../../components/AllPosts";
+import { Post } from "../../../../components/AllPosts/AllPosts";
 import Navbar from "../../../../components/Navbar/Navbar";
 import "./Page.css";
 
-export default async function BlogDetailsPage({
-  params,
-}: {
+export default async function BlogDetailsPage(props: {
   params: { id: string };
 }) {
+  const { params } = props;
+
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.id}`
   );
