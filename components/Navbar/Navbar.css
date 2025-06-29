@@ -7,6 +7,9 @@
 
 .NavbarName {
   font-size: 24px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .NavbarToggle {

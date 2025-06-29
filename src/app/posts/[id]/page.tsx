@@ -1,4 +1,6 @@
 import { Post } from "../../../../components/AllPosts";
+import Navbar from "../../../../components/Navbar/Navbar";
+import "./Page.css";
 
 export default async function BlogDetailsPage({
   params,
@@ -10,10 +12,18 @@ export default async function BlogDetailsPage({
   );
   const post: Post = await res.json();
 
+  const date = "June 26, 2025"; // Mock date
+
   return (
     <div>
-      <h1>{post.title}</h1>
-      <p>{post.body}</p>
+      <div className="BlogDetailsWrapper">
+        <div className="NavbarWrapper">
+          <Navbar />
+        </div>
+        <div className="date">{date}</div>
+        <h1 className="title">{post.title}</h1>
+        <p className="content">{post.body}</p>
+      </div>
     </div>
   );
 }

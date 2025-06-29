@@ -2,7 +2,7 @@
 
 import "./Navbar.css";
 import { useState } from "react";
-
+import Link from "next/link";
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -13,7 +13,9 @@ export default function Navbar() {
 
   return (
     <nav className="Navbar">
-      <div className="NavbarName">Walid Moussa Khalil Ibrahim</div>
+      <Link className="NavbarName" href="/posts">
+        Walid Moussa Khalil Ibrahim
+      </Link>
       <button className="NavbarToggle" onClick={toggleDarkMode}>
         {darkMode ? "Light Mode" : "Dark Mode"}
       </button>
