@@ -1,6 +1,6 @@
 import styles from "./SmallHorizontalCard.module.css";
-import { Post } from "../RecentBlogs/RecentBlogs";
-
+import { Post } from "../AllPosts/AllPosts";
+import Image from "next/image";
 export default function SmallHorizontalCard({ postData }: { postData: Post }) {
   const tags = ["Design", "Research", "Leadership"]; // Example tags for now
   const date = "June 26, 2025"; // Placeholder date
@@ -8,8 +8,10 @@ export default function SmallHorizontalCard({ postData }: { postData: Post }) {
 
   return (
     <div className={`SmallHorizontalCard ${styles.BlogCard}`}>
-      <img
+      <Image
         src={`https://picsum.photos/592/228?random=${postData.id}`}
+        width={384}
+        height={240}
         alt="Blog Image"
         className={styles.BlogImage}
       />

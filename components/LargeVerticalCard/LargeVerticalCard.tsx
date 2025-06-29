@@ -1,5 +1,6 @@
 import styles from "./LargeVerticalCard.module.css";
-import { Post } from "../RecentBlogs/RecentBlogs";
+import { Post } from "../AllPosts/AllPosts";
+import Image from "next/image";
 
 export default function LargeVerticalCard({ postData }: { postData: Post }) {
   const tags = ["Design", "Research", "Leadership"]; // Example tags for now
@@ -8,9 +9,11 @@ export default function LargeVerticalCard({ postData }: { postData: Post }) {
 
   return (
     <div className={`LargeVerticalCard ${styles.BlogCard}`}>
-      <img
+      <Image
         src={`https://picsum.photos/592/228?random=${postData.id}`}
         alt="Blog Image"
+        width={384}
+        height={240}
         className={styles.BlogImage}
       />
 

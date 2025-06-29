@@ -1,4 +1,5 @@
 import "./BlogCard.css";
+import Image from "next/image";
 export default function BlogCard({
   post,
 }: {
@@ -10,7 +11,7 @@ export default function BlogCard({
 
   return (
     <div className="BlogCard">
-      <img
+      <Image
         src={`https://picsum.photos/384/240?random=${post.id}`}
         alt="Blog Image"
         className="BlogImage"

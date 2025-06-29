@@ -1,5 +1,6 @@
 import type { Post } from "../AllPosts/AllPosts";
 import styles from "./LargeHorizontalCard.module.css";
+import Image from "next/image";
 
 export default function LargeHorizontalCard({ postData }: { postData: Post }) {
   const tags = ["Design", "Research", "Leadership"]; // Example tags for now
@@ -8,9 +9,11 @@ export default function LargeHorizontalCard({ postData }: { postData: Post }) {
 
   return (
     <div className={`LargeHorizontalCard ${styles.BlogCard}`}>
-      <img
+      <Image
         src={`https://picsum.photos/592/228?random=${postData.id}`}
         alt="Blog Image"
+        width={384}
+        height={240}
         className={styles.BlogImage}
       />
 

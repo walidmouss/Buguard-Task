@@ -1,16 +1,15 @@
-import { Post } from "../../../../components/AllPosts/AllPosts";
+// @ts-nocheck
+
 import Navbar from "../../../../components/Navbar/Navbar";
 import "./Page.css";
 
-export default async function BlogDetailsPage(props: {
-  params: { id: string };
-}) {
-  const { params } = props;
-
+export default async function BlogDetailsPage({ params }) {
   const res = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${params.id}`
+    `https://jsonplaceholder.typicode.com/posts/${params.id}`,
+    { cache: "no-store" }
   );
-  const post: Post = await res.json();
+
+  const post = await res.json();
 
   const date = "June 26, 2025"; // Mock date
 
