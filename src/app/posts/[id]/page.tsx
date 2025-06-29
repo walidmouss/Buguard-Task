@@ -1,9 +1,13 @@
-// @ts-nocheck
-
 import Navbar from "../../../../components/Navbar/Navbar";
 import "./Page.css";
 
-export default async function BlogDetailsPage({ params }) {
+type Props = {
+  params: {
+    id: string;
+  };
+};
+
+export default async function BlogDetailsPage({ params }: Props) {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.id}`,
     { cache: "no-store" }
@@ -11,7 +15,7 @@ export default async function BlogDetailsPage({ params }) {
 
   const post = await res.json();
 
-  const date = "June 26, 2025"; // Mock date
+  const date = "June 26, 2025";
 
   return (
     <div>
