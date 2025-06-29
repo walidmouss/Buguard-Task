@@ -4,6 +4,7 @@ import { Post } from "../RecentBlogs/RecentBlogs";
 export default function SmallHorizontalCard({ postData }: { postData: Post }) {
   const tags = ["Design", "Research", "Leadership"]; // Example tags for now
   const date = "June 26, 2025"; // Placeholder date
+  const tagColors = ["#FFEFD5", "#E0FFFF", "#F0FFF0"]; // Light background colors for tags
 
   return (
     <div className={`SmallHorizontalCard ${styles.BlogCard}`}>
@@ -22,7 +23,11 @@ export default function SmallHorizontalCard({ postData }: { postData: Post }) {
 
         <div className={styles.BlogTags}>
           {tags.map((tag, index) => (
-            <span key={index} className={styles.BlogTag}>
+            <span
+              key={index}
+              className={styles.BlogTag}
+              style={{ backgroundColor: tagColors[index % tagColors.length] }}
+            >
               {tag}
             </span>
           ))}

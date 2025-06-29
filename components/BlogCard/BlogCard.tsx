@@ -6,6 +6,7 @@ export default function BlogCard({
 }) {
   const tags = ["Design", "Research", "Leadership"]; // Example tags for now
   const date = "June 26, 2025"; // Placeholder date (you can adjust)
+  const tagColors = ["#FFEFD5", "#E0FFFF", "#F0FFF0"]; // Light background colors for tags
 
   return (
     <div className="BlogCard">
@@ -26,7 +27,11 @@ export default function BlogCard({
 
         <div className="BlogTags">
           {tags.map((tag, index) => (
-            <span key={index} className="BlogTag">
+            <span
+              key={index}
+              className="BlogTag"
+              style={{ backgroundColor: tagColors[index % tagColors.length] }}
+            >
               {tag}
             </span>
           ))}

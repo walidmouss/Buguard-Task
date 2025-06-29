@@ -39,8 +39,13 @@
 }
 
 .BlogTag {
-  /* place holder for tags */
+  padding: 4px 10px;
+  margin: 0px 6px 6px 0;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #555;
 }
+
 @media (max-width: 1366px) {
   .BlogCard {
     width: 770px;
