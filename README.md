@@ -1,4 +1,4 @@
-Buguard Blog Task (Next.js Project)
+(Next.js Project)
 This is a simple blog web application built with Next.js (App Router), styled with CSS modules, and deployed on Vercel.
 
 📋 Features
